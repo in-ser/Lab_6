@@ -1,0 +1,159 @@
+/* canada.css - Cumple todos los requisitos del trabajo */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+
+:root {
+    --rojo: #d62828;
+    --gris: #333;
+    --fondo: #f9f9f9;
+    --blanco: #ffffff;
+}
+
+/* Estilo general */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--fondo);
+    color: var(--gris);
+    margin: 0;
+    padding: 0;
+}
+
+/* Encabezado */
+#encabezado {
+    background-color: var(--rojo);
+    color: var(--blanco);
+    padding: 20px;
+    text-align: center;
+    position: relative;
+}
+
+/* Menú */
+.menu {
+    margin-top: 10px;
+}
+
+.menu a {
+    color: var(--blanco);
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: 500;
+}
+
+.menu a:hover {
+    text-decoration: underline;
+}
+
+.menu a:active {
+    color: #ffd6d6;
+}
+
+.menu a:visited {
+    color: #ffeaea;
+}
+
+/* Contenido principal */
+main {
+    max-width: 1000px;
+    margin: 30px auto;
+    background-color: var(--blanco);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* Columnas (float + box model) */
+.columnas {
+    overflow: auto;
+    margin-top: 20px;
+}
+
+.col {
+    padding: 10px;
+}
+
+.izquierda {
+    float: left;
+    width: 60%;
+}
+
+.derecha {
+    float: right;
+    width: 35%;
+    background-color: #fff3f3;
+    border-left: 4px solid var(--rojo);
+    border-radius: 5px;
+}
+
+/* Listas */
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+ul li {
+    background-color: #fff3f3;
+    margin-bottom: 8px;
+    padding: 10px;
+    border-left: 5px solid var(--rojo);
+    border-radius: 4px;
+}
+
+/* Imágenes */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 15px auto;
+    border-radius: 8px;
+}
+
+/* Videos responsivos */
+.video-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* proporción 16:9 */
+    height: 0;
+    overflow: hidden;
+    margin: 15px 0;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+}
+
+/* Enlace volver */
+.volver {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.volver a {
+    color: var(--rojo);
+    font-weight: bold;
+}
+
+/* Pie de página */
+footer {
+    background-color: var(--rojo);
+    color: var(--blanco);
+    text-align: center;
+    padding: 10px;
+    margin-top: 30px;
+}
+
+/* Diseño responsive */
+@media (max-width: 768px) {
+    .izquierda, .derecha {
+        float: none;
+        width: 100%;
+    }
+    .menu a {
+        display: inline-block;
+        margin: 8px;
+    }
+}
