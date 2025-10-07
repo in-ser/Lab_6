@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viajes Virtuales | Tu Agencia de Viajes en Línea</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Barra de navegación -->
+    <nav class="navbar">
+        <a href="index.html" class="logo">Viajes<span>Virtuales</span></a>
+        <div class="nav-links">
+            <a href="index.html" class="nav-link">Inicio</a>
+            <a href="#destinos" class="nav-link">Destinos</a>
+            <a href="#promociones" class="nav-link">Promociones</a>
+            <a href="#servicios" class="nav-link">Servicios</a>
+            <a href="nosotros.html" class="nav-link">Nosotros</a>
+            <a href="#contacto" class="nav-link nav-cta">Contactar</a>
+        </div>
+    </nav>
+
+    <!-- Encabezado principal -->
+    <header>
+        <div class="header-content">
+            <h1>Descubre el mundo con Viajes Virtuales</h1>
+            <p class="header-tagline">Explora destinos increíbles y vive experiencias inolvidables con nuestra agencia de viajes online</p>
+            
+            <!-- Buscador de viajes -->
+            <div class="search-box">
+                <div class="search-field">
+                    <label for="destination">Destino</label>
+                    <input type="text" id="destination" placeholder="¿A dónde quieres ir?">
+                </div>
+                <div class="search-field">
+                    <label for="date">Fecha de salida</label>
+                    <input type="date" id="date">
+                </div>
+                <div class="search-field">
+                    <label for="date">Fecha de vuelta</label>
+                    <input type="date" id="date">
+                </div>
+                <div class="search-field">
+                    <label for="travelers">Viajeros</label>
+                    <select id="travelers">
+                        <option value="1">1 Persona</option>
+                        <option value="2">2 Personas</option>
+                        <option value="3">3 Personas</option>
+                        <option value="4">4 Personas</option>
+                        <option value="5+">5+ Personas</option>
+                    </select>
+                </div>
+                <button class="search-btn">Buscar viajes</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Sección de bienvenida -->
+        <section class="welcome-section">
+            <h2 class="section-title">Bienvenido a Viajes Virtuales</h2>
+            <p>Tu agencia de viajes online donde encontrarás los mejores destinos turísticos nacionales e internacionales. Ofrecemos paquetes personalizados, atención al cliente 24/7 y las mejores tarifas del mercado. ¡Comienza tu próxima aventura con nosotros!</p>
+        </section>
+        
+        <!-- Destinos destacados -->
+        <section id="destinos" class="featured-destinations">
+            <div class="featured-title">
+                <h2>Destinos populares</h2>
+                <a href="#" class="view-all">Ver todos <i class="fas fa-arrow-right"></i></a>
+            </div>
+            
+            <ul class="destination-grid">
+                <li class="destination-card">
+                    <div class="destination-img" style="background-image: url('https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&q=80&w=2073&ixlib=rb-4.0.3');"></div>
+                    <div class="destination-content">
+                        <h3 class="destination-name">Francia</h3>
+                        <div class="destination-price">Desde $850</div>
+                        <div class="destination-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <div class="destination-meta">
+                            <span><i class="fas fa-clock"></i> 7-10 días</span>
+                            <span><i class="fas fa-user-friends"></i> 2+ personas</span>
+                        </div>
+                        <a href="Francia.html" class="destination-button">Ver detalles</a>
+                    </div>
+                </li>
+                <li class="destination-card">
+                    <div class="destination-img" style="background-image: url('https://canada-eta.fr/wp-content/uploads/2015/12/canada-landscape-830x467.jpg');"></div>
+                    <div class="destination-content">
+                        <h3 class="destination-name">Canadá</h3>
+                        <div class="destination-price">Desde $950</div>
+                        <div class="destination-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="destination-meta">
+                            <span><i class="fas fa-clock"></i> 8-12 días</span>
+                            <span><i class="fas fa-user-friends"></i> 1+ personas</span>
+                        </div>
+                        <a href="canada.html" class="destination-button">Ver detalles</a>
+                    </div>
+                </li>
+                <li class="destination-card">
+                    <div class="destination-img" style="background-image: url('https://images.unsplash.com/photo-1492571350019-22de08371fd3?auto=format&fit=crop&q=80&w=2053&ixlib=rb-4.0.3');"></div>
+                    <div class="destination-content">
+                        <h3 class="destination-name">Japón</h3>
+                        <div class="destination-price">Desde $1200</div>
+                        <div class="destination-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="destination-meta">
+                            <span><i class="fas fa-clock"></i> 10-14 días</span>
+                            <span><i class="fas fa-user-friends"></i> 1+ personas</span>
+                        </div>
+                        <a href="Japón.html" class="destination-button">Ver detalles</a>
+                    </div>
+                </li>
+                <li class="destination-card">
+                    <div class="destination-img" style="background-image: url('https://www.tecnova.cl/wp-content/uploads/2023/02/800x600colombia.jpg');"></div>
+                    <div class="destination-content">
+                        <h3 class="destination-name">Colombia</h3>
+                        <div class="destination-price">Desde $650</div>
+                        <div class="destination-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                        <div class="destination-meta">
+                            <span><i class="fas fa-clock"></i> 5-9 días</span>
+                            <span><i class="fas fa-user-friends"></i> 2+ personas</span>
+                        </div>
+                        <a href="Colombia.html" class="destination-button">Ver detalles</a>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Sección de promociones -->
+        <section id="promociones" class="promotions">
+            <div class="promotions-container">
+                <h2>Ofertas especiales</h2>
+                <div class="destination-grid">
+                    <div class="destination-card">
+                        <div class="destination-img" style="background-image: url('https://www.argentine.campusfrance.org/sites/pays/files/argentine/styles/mobile_visuel_principal_page/public/louvre-102840_1280.jpg?itok=3dhhqBZO');"></div>
+                        <div class="destination-content">
+                            <span class="promo-badge">25% DESCUENTO</span>
+                            <h3 class="destination-name">Tour por Francia</h3>
+                            <div class="destination-price"><del>$1800</del> $1350</div>
+                            <p>Visita 5 regiones emblematicas de Francia en 15 días con alojamiento incluido</p>
+                            <a href="#" class="destination-button">Reservar ahora</a>
+                        </div>
+                    </div>
+                    <div class="destination-card">
+                        <div class="destination-img" style="background-image: url('https://media.viajando.travel/p/cd27e94680faa12a5cb7abf4f6ff8f23/adjuntos/236/imagenes/000/550/0000550246/1200x0/smart/san-bernardo-cartagena-es-un-paraiso-natural-visitar-colombia.jpg');"></div>
+                        <div class="destination-content">
+                            <span class="promo-badge">OFERTA 4x1</span>
+                            <h3 class="destination-name">Playa Bocagrande</h3>
+                            <div class="destination-price">$899 por 4 personas</div>
+                            <p>Todo incluido, 7 noches en resort 5 estrellas frente al mar</p>
+                            <a href="#" class="destination-button">Reservar ahora</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Servicios -->
+        <section id="servicios" class="services">
+            <h2 class="section-title">Nuestros servicios</h2>
+            <div class="service-grid">
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-plane"></i></div>
+                    <h3 class="service-title">Vuelos internacionales</h3>
+                    <p class="service-desc">Conexiones con las mejores aerolíneas a precios exclusivos.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-hotel"></i></div>
+                    <h3 class="service-title">Hospedaje</h3>
+                    <p class="service-desc">Hoteles seleccionados con excelente ubicación y calidad.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-route"></i></div>
+                    <h3 class="service-title">Tours guiados</h3>
+                    <p class="service-desc">Descubre cada destino con guías expertos y locales.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-shield-alt"></i></div>
+                    <h3 class="service-title">Seguro de viaje</h3>
+                    <p class="service-desc">Viaja con total tranquilidad con nuestra cobertura completa.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Ofertas -->
+        <section class="newsletter">
+            <div class="newsletter-content">
+                <h3>Recibe nuestras mejores ofertas</h3>
+                <p>Suscríbete a nuestro boletín para recibir promociones exclusivas y consejos de viaje.</p>
+                <div class="newsletter-form">
+                    <input type="email" class="newsletter-input" placeholder="Tu correo electrónico">
+                    <button class="newsletter-button">Suscribirse</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-column">
+                <h4>Viajes Virtuales</h4>
+                <ul class="footer-links">
+                    <li><a href="#">Sobre nosotros</a></li>
+                    <li><a href="#">Blog de viajes</a></li>
+                    <li><a href="#">Trabaja con nosotros</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Destinos populares</h4>
+                <ul class="footer-links">
+                    <li><a href="Francia.html">Francia</a></li>
+                    <li><a href="canada.html">Canadá</a></li>
+                    <li><a href="Japón.html">Japón</a></li>
+                    <li><a href="Colombia.html">Colombia</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Ayuda</h4>
+                <ul class="footer-links">
+                    <li><a href="#">Preguntas frecuentes</a></li>
+                    <li><a href="#">Políticas de cancelación</a></li>
+                    <li><a href="#">Formas de pago</a></li>
+                    <li><a href="#">Aerolineas</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Contacto</h4>
+                <ul class="footer-links">
+                    <li><a href="#"><i class="fas fa-envelope"></i> info@viajesvirtuales.com</a></li>
+                    <li><a href="#"><i class="fas fa-phone"></i> +52 555-123-4567</a></li>
+                    <li><a href="#"><i class="fas fa-map-marker-alt"></i> wwww.ViajesVirtuales.com</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Viajes Virtuales. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>

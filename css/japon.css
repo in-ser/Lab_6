@@ -1,0 +1,185 @@
+/* Importando fuentes de Google */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Poppins:wght@300;400;500;700&display=swap');
+
+/* Variables de color */
+:root {
+    --primary-color: #e74c3c;
+    --secondary-color: #34495e;
+    --accent-color: #f1c40f;
+    --background-color: #f9f9f9;
+    --text-color: #333333;
+    --box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.7;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    margin: 0;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23e74c3c' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+/* Encabezado y navegación */
+h1 {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 3rem;
+    color: var(--primary-color);
+    margin: 1rem 0;
+    text-align: center;
+    position: relative;
+}
+
+h1::after {
+    content: "日本";
+    position: absolute;
+    top: -0.8rem;
+    right: 0;
+    font-size: 1rem;
+    opacity: 0.7;
+    color: var(--primary-color);
+}
+
+a[href="index.html"] {
+    display: inline-block;
+    margin: 1rem 0 2rem;
+    padding: 0.6rem 1.2rem;
+    background-color: var(--primary-color);
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: 500;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    text-align: center;
+}
+
+a[href="index.html"]:hover {
+    background-color: #c0392b;
+    transform: translateY(-2px);
+}
+
+hr {
+    border: none;
+    height: 2px;
+    background: linear-gradient(to right, transparent, var(--primary-color), transparent);
+    margin: 2rem 0;
+}
+
+/* Contenido y párrafos */
+p {
+    margin-bottom: 1.5rem;
+    font-size: 1.05rem;
+    text-align: justify;
+    max-width: 100%;
+}
+
+h2 {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 1.8rem;
+    color: var(--secondary-color);
+    margin: 2rem 0 1rem;
+    padding-left: 1rem;
+    border-left: 4px solid var(--primary-color);
+}
+
+/* Listas de precios y sitios */
+ul {
+    list-style-type: none;
+    margin: 1.5rem 0;
+    padding: 0;
+}
+
+ul li {
+    padding: 0.8rem 1rem;
+    margin-bottom: 0.5rem;
+    background-color: white;
+    border-radius: 6px;
+    box-shadow: var(--box-shadow);
+    position: relative;
+    padding-left: 2.5rem;
+    transition: transform 0.2s ease;
+}
+
+ul li:hover {
+    transform: translateX(5px);
+}
+
+ul li::before {
+    content: "🏯";
+    position: absolute;
+    left: 0.8rem;
+}
+
+/* Precios con estilos especiales */
+h2:contains("Precios") + ul li::before {
+    content: "💴";
+}
+
+/* Imágenes */
+img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin: 1rem 0;
+    box-shadow: var(--box-shadow);
+    transition: transform 0.3s ease;
+}
+
+img:hover {
+    transform: scale(1.02);
+}
+
+/* Video de YouTube */
+iframe {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+    border-radius: 8px;
+    margin: 1rem 0 2rem;
+    box-shadow: var(--box-shadow);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    body {
+        padding: 15px;
+    }
+    
+    h1 {
+        font-size: 2.2rem;
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+    }
+    
+    p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+    
+    h1::after {
+        display: none;
+    }
+    
+    ul li {
+        padding-left: 2rem;
+    }
+}
